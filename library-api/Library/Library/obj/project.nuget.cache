@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FQJECOgkH1e5qjc2EHIMyNScsZyClyuv0hAKqXOApSs2mWdmNPyovZ0fKE7TVsqmraG9vqtIKLWrNtojPGO7Vg==",
+  "dgSpecHash": "BKTtoFMSdIQZG9dZdnvaWG5otaR00/wvuxjv2vrJcgM8XHllAB4z24WRVOlBgeh2RH4npTyzMccpdNwdd+Nkog==",
   "success": true,
   "projectFilePath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Proyecto Final\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\Mau\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Mau\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\Mau\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\Mau\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Mau\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Mau\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Mau\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

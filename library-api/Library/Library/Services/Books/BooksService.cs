@@ -2,6 +2,7 @@
 using Library.Data.Entities;
 using Library.Data.Repository;
 using Library.Models;
+using Library.Services.Review;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,16 +14,20 @@ namespace Library.Services.Books
     {
         private ILibraryRepository _libraryRepository;
         private readonly IMapper _mapper;
-        public BooksService(ILibraryRepository libraryRepository, IMapper mapper)
+        private readonly ReviewService _reviewService;
+        public BooksService(ILibraryRepository libraryRepository, IMapper mapper, ReviewService reviewService)
         {
             _libraryRepository = libraryRepository;
             _mapper = mapper;
+            _reviewService = reviewService;
         }
 
         public async Task<IEnumerable<Book>> GetAllBooks()
         {
             var booksEntity = await _libraryRepository.GetAllBooks();
-            return _mapper.Map<IEnumerable<Book>>(booksEntity);
+            //var commentaries = _reviewService.GetReviews();
+            var bookToReturn = _mapper.Map<IEnumerable<Book>>(booksEntity);
+            return bookToReturn;
         }
 
         public async Task<Book> GetBook(int id)
@@ -30,7 +35,9 @@ namespace Library.Services.Books
             var bookEntity = await _libraryRepository.GetBook(id);
             if (bookEntity == null)
                 throw new Exception("there where and error with the DB");
-            return _mapper.Map<Book>(bookEntity);
+            var bookToReturn = _mapper.Map<Book>(bookEntity);
+            bookToReturn.ReviewList = await _reviewService.GetReviews(bookToReturn.Id);
+            return bookToReturn;
 
         }
 
