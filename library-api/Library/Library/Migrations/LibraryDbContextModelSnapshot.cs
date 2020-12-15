@@ -35,6 +35,9 @@ namespace Library.Migrations
                     b.Property<int>("NumberPages")
                         .HasColumnType("int");
 
+                    b.Property<long>("Price")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
