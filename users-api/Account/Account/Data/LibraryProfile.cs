@@ -1,4 +1,4 @@
-﻿using Account.Data.Entites;
+﻿
 using Account.Models;
 using AutoMapper;
 using System;
@@ -10,10 +10,6 @@ namespace Account.Data
 {
     public class LibraryProfile:Profile
     {
-        public LibraryProfile()
-        {
-            this.CreateMap<UserEntity, User>()
-                .ReverseMap();
-        }
+       
     }
 }
