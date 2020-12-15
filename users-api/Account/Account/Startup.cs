@@ -41,6 +41,13 @@ namespace Account
                     Configuration.GetConnectionString("Library")
                     )
             );
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
 
             services.AddAutoMapper(typeof(Startup));
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
@@ -78,16 +85,18 @@ namespace Account
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            app.UseHttpsRedirection();
+
         }
     }
 }
