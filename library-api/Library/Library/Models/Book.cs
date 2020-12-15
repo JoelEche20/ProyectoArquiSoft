@@ -17,6 +17,7 @@ namespace Library.Models
         public int  NumberPages{ get; set; }
         public string Gender { get; set; }
         public string Author { get; set; }
+        public long  Price { get; set; }
 
     }
 }

@@ -55,7 +55,8 @@ namespace Library.Migrations
                     Title = table.Column<string>(nullable: false),
                     NumberPages = table.Column<int>(nullable: false),
                     Gender = table.Column<string>(nullable: true),
-                    Author = table.Column<string>(nullable: true)
+                    Author = table.Column<string>(nullable: true),
+                    Price = table.Column<long>(nullable: false)
                 },
                 constraints: table =>
                 {
