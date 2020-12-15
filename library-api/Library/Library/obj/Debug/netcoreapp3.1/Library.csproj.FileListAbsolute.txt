@@ -40,5 +40,6 @@ D:\UNIVERSIDAD\ARQUITECTURA DE SOFTWARE\Proyecto Final\ProyectoArquiSoft\library
 D:\UNIVERSIDAD\ARQUITECTURA DE SOFTWARE\Proyecto Final\ProyectoArquiSoft\library-api\Library\Library\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\UNIVERSIDAD\ARQUITECTURA DE SOFTWARE\Proyecto Final\ProyectoArquiSoft\library-api\Library\Library\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\UNIVERSIDAD\ARQUITECTURA DE SOFTWARE\Proyecto Final\ProyectoArquiSoft\library-api\Library\Library\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\UNIVERSIDAD\ARQUITECTURA DE SOFTWARE\Proyecto Final\ProyectoArquiSoft\library-api\Library\Library\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\UNIVERSIDAD\ARQUITECTURA DE SOFTWARE\Proyecto Final\ProyectoArquiSoft\library-api\Library\Library\obj\Debug\netcoreapp3.1\Library.csproj.CoreCompileInputs.cache
 D:\UNIVERSIDAD\ARQUITECTURA DE SOFTWARE\Proyecto Final\ProyectoArquiSoft\library-api\Library\Library\obj\Debug\netcoreapp3.1\Library.MvcApplicationPartsAssemblyInfo.cache

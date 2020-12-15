@@ -7,7 +7,12 @@ namespace Library.Models
 {
     public class Book
     {
+        public Book()
+        {
+            ReviewList = new List<Commentary>();
+        }
         public int Id { get; set; }
+        public List<Commentary> ReviewList { get; set; }
         public string Title { get; set; }
         public int  NumberPages{ get; set; }
         public string Gender { get; set; }

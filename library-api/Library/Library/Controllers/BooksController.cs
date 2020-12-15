@@ -37,7 +37,7 @@ namespace Library.Controllers
         {
             try
             {
-                var book = await this._booksService.GetBook(id);
+                var book = await _booksService.GetBook(id);
                 return Ok(book);
             }
             catch (Exception)

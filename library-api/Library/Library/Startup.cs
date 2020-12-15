@@ -1,7 +1,9 @@
 using AutoMapper;
 using Library.Data;
 using Library.Data.Repository;
+using Library.Models;
 using Library.Services.Books;
+using Library.Services.Review;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +27,7 @@ namespace Library
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddHttpClient<ReviewService>();
             services.AddTransient<ILibraryRepository, LibraryRepository>();
             services.AddTransient<IBooksService, BooksService>();
             services.AddEntityFrameworkSqlServer();
@@ -33,7 +36,6 @@ namespace Library
                     Configuration.GetConnectionString("LibraryDataBase")
                     )
             );
-
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
