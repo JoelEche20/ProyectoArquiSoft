@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Proyecto Final\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj": {}
+    "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj": {}
   },
   "projects": {
-    "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Proyecto Final\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj": {
+    "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Proyecto Final\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
+        "projectUniqueName": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
         "projectName": "Library",
-        "projectPath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Proyecto Final\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
+        "projectPath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
         "packagesPath": "C:\\Users\\Mau\\.nuget\\packages\\",
-        "outputPath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Proyecto Final\\ProyectoArquiSoft\\library-api\\Library\\Library\\obj\\",
+        "outputPath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mau\\AppData\\Roaming\\NuGet\\NuGet.Config",

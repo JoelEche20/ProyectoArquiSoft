@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BKTtoFMSdIQZG9dZdnvaWG5otaR00/wvuxjv2vrJcgM8XHllAB4z24WRVOlBgeh2RH4npTyzMccpdNwdd+Nkog==",
+  "dgSpecHash": "3nrna5l07bzekWqrDoRsdqG3WR91rUlT+5W0EzHR7wEioxCPjmgo5CBMWrM5tXiIagTEVe5NnNczgmux7K8ARQ==",
   "success": true,
-  "projectFilePath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Proyecto Final\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
+  "projectFilePath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mau\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\Mau\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
