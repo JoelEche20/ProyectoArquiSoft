@@ -20,4 +20,8 @@ export class HttpService {
   get(url: string) {
     return this.http.get(url);
   }
+
+  delete(url, id) {
+    return this.http.delete(url + "/" + id);
+  }
 }

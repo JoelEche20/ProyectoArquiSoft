@@ -28,4 +28,10 @@ export class HomeComponent implements OnInit {
       this.dataSource = new MatTableDataSource<Book>(this.bookList);
     })
   }
+
+  deleteBook(id) {
+    this.httpService.delete("http://localhost:60818/api/books", id).subscribe(response => {
+      this.ngOnInit();
+    });
+  }
 }
