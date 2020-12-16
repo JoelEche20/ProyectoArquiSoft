@@ -4,11 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { HeaderComponent } from '../app/components/header/header.component';
 import { HomeComponent } from '../app/components/home/home.component';
 import { MatIconModule } from '@angular/material/icon';
-import { LoginComponent } from './components/login/login.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
@@ -21,13 +19,16 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { RegisterComponent } from './components/register/register.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

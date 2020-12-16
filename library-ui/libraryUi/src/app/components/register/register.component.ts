@@ -5,11 +5,11 @@ import { first } from 'rxjs/operators';
 import { AuthenticationService } from 'src/app/Services/authentication.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
   form: FormGroup;
   public loginInvalid: boolean;
   public loading: boolean;
@@ -27,10 +27,13 @@ export class LoginComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.returnUrl = this.route.snapshot.queryParams.returnUrl || '/';
+    this.returnUrl = this.route.snapshot.queryParams.returnUrl || '/login';
     this.form = this.fb.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required]
+      name: ['', Validators.required],
+      direction: ['', Validators.required],
+      phone: ['', Validators.required],
+      password: ['', Validators.required],
+      confirmPassword: ['', Validators.required]
     });
 
     if (await this.authService.currentUserValue) {
@@ -42,11 +45,13 @@ export class LoginComponent implements OnInit {
     this.loginInvalid = false;
     this.formSubmitAttempt = false;
     if (this.form.valid) {
-      const username = this.form.get('username').value;
+      const name = this.form.get('name').value;
+      const direction = this.form.get('direction').value;
+      const phone = this.form.get('phone').value;
       const password = this.form.get('password').value;
+      const confirmPassword = this.form.get('confirmPassword').value;
 
-      this.authService.login(username, password)
-        .pipe(first())
+      this.authService.register(name,direction,phone, password,confirmPassword)
         .subscribe(
           data => {
             this.router.navigate([this.returnUrl]);

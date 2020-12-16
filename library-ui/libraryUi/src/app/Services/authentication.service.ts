@@ -40,12 +40,14 @@ export class AuthenticationService {
           .pipe(map(user => {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('currentUser', JSON.stringify(user));
-              this.currentUserSubject.next(user);
-              console.log(user);
-              
+              this.currentUserSubject.next(user);  
               return user;
           }));
   }
+  register(Name:string,Direction:string,Phone:number, Password:string,ConfirmPassword:string){
+      return this.http.post<any>(`${this.apiUrl}Register`, { Name, Direction, Phone, Password, ConfirmPassword });
+  }
+
 
   logout() {
       // remove user from local storage to log user out
