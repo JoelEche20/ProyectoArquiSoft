@@ -5317,20 +5317,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mau\\.nuget\\packages\\": {}
+    "C:\\Users\\Joel\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\Joel\\Desktop\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
-      "packagesPath": "C:\\Users\\Mau\\.nuget\\packages\\",
-      "outputPath": "D:\\UNIVERSIDAD\\ARQUITECTURA DE SOFTWARE\\Final Proyecto\\ProyectoArquiSoft\\library-api\\Library\\Library\\obj\\",
+      "projectPath": "C:\\Users\\Joel\\Desktop\\ProyectoArquiSoft\\library-api\\Library\\Library\\Library.csproj",
+      "packagesPath": "C:\\Users\\Joel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Joel\\Desktop\\ProyectoArquiSoft\\library-api\\Library\\Library\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Mau\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Joel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5402,7 +5407,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
