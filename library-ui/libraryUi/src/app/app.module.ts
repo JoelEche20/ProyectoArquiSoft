@@ -21,14 +21,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './components/register/register.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { BookDetailComponent } from './components/book-detail/book-detail.component';
 import { LoginComponent } from './components/login/login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
