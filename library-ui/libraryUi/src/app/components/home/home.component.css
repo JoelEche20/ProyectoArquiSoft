@@ -9,13 +9,10 @@ table {
 
 #booksTable{
   margin: 20px;
-<<<<<<< HEAD
 }
 
 .example-flex-container {
   display: flex;
   justify-content: space-between;
   width: 140px;
-=======
->>>>>>> 8d2c53a45e2b9ab40b44fa4f110aedc989a5c1ec
 }
