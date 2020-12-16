@@ -21,6 +21,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatMenuModule,
     MatButtonModule,
-    MatTableModule,
     MatDividerModule,
     MatProgressSpinnerModule,
     MatInputModule,
@@ -48,8 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
     MatTableModule,
-    MatTableModule,
-    MatCarouselModule.forRoot(),
+    MatCarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
