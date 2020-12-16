@@ -1,0 +1,54 @@
+<div class="row h-100">
+    <div class="col-sm-12 my-auto">
+  
+      <mat-card>
+        <mat-card-content>
+  
+          <h2>Registrarse</h2>
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  
+            <mat-form-field class="full-width-input">
+              <input matInput type="text" placeholder="Usuario" formControlName="name" required>
+              <mat-error>
+                Por favor ingrese un nombre de usuario válido
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+                <input matInput type="text" placeholder="Direccion" formControlName="direction" required>
+                <mat-error>
+                  Por favor ingrese una direccion válida
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+                <input matInput type="number" placeholder="Celular" formControlName="phone" required>
+                <mat-error>
+                  Por favor ingrese un numero de telefono válido
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+                <input matInput type="password" placeholder="Contraseña" formControlName="password" required>
+                <mat-error>
+                  Por favor ingrese una contraseña válida
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+              <input matInput type="password" placeholder="Confirmar Contraseña" formControlName="confirmPassword" required>
+              <mat-error>
+                Por favor proporcione una contraseña válida
+              </mat-error>
+            </mat-form-field>
+            <mat-error *ngIf="loginInvalid">
+  
+              Hubo un problema al iniciar sesión({{error}})
+            </mat-error>
+            <div class="row justify-content-center">
+              <button *ngIf="!loading" mat-raised-button color="primary">Entrar </button>
+              <mat-spinner *ngIf="loading" [diameter]="40"></mat-spinner>
+            </div>
+  
+          </form>
+        </mat-card-content>
+      </mat-card>
+  
+    </div>
+  </div>
