@@ -4,7 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { HeaderComponent } from '../app/components/header/header.component';
+import { HomeComponent } from '../app/components/home/home.component';
 import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './components/login/login.component';
 import {MatMenuModule} from '@angular/material/menu';
@@ -19,11 +21,13 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatMenuModule,
     MatButtonModule,
-    MatTableModule,
     MatDividerModule,
     MatProgressSpinnerModule,
     MatInputModule,
@@ -43,7 +46,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatOptionModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatCarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
