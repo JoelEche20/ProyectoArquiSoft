@@ -4,7 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
+<<<<<<< HEAD
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+=======
+import { MatTableModule } from '@angular/material/table';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+
+>>>>>>> 8d2c53a45e2b9ab40b44fa4f110aedc989a5c1ec
 import { HeaderComponent } from '../app/components/header/header.component';
 import { HomeComponent } from '../app/components/home/home.component';
 import { MatIconModule } from '@angular/material/icon';
@@ -26,7 +32,10 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HeaderComponent,
+<<<<<<< HEAD
     LoginComponent,
+=======
+>>>>>>> 8d2c53a45e2b9ab40b44fa4f110aedc989a5c1ec
     HomeComponent
   ],
   imports: [
@@ -35,6 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+<<<<<<< HEAD
     MatMenuModule,
     MatButtonModule,
     MatDividerModule,
@@ -49,6 +59,10 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     MatTableModule,
     MatCarouselModule.forRoot()
+=======
+    MatTableModule,
+    MatCarouselModule.forRoot(),
+>>>>>>> 8d2c53a45e2b9ab40b44fa4f110aedc989a5c1ec
   ],
   providers: [],
   bootstrap: [AppComponent]
