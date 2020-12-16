@@ -50,7 +50,7 @@
               </button>
             </div>
             <div class="example-button-container">
-              <button mat-mini-fab color="warn" aria-label="Example icon button with a plus one icon">
+              <button mat-mini-fab color="warn" (click)="deleteBook(element.id)" aria-label="Example icon button with a plus one icon">
                 <mat-icon>delete</mat-icon>
               </button>
             </div>
