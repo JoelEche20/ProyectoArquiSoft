@@ -56,15 +56,13 @@ namespace Library
 
             app.UseRouting();
 
-            app.UseCors("CorsPolicy");
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-            app.UseHttpsRedirection();
+            app.UseCors("CorsPolicy");
         }
     }
 }
