@@ -23,6 +23,11 @@ import { RegisterComponent } from './components/register/register.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { BookDetailComponent } from './components/book-detail/book-detail.component';
 import { LoginComponent } from './components/login/login.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { AddOrdersComponent } from './components/add-orders/add-orders.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -31,7 +36,9 @@ import { LoginComponent } from './components/login/login.component';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    BookDetailComponent
+    BookDetailComponent,
+    OrdersComponent,
+    AddOrdersComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +59,8 @@ import { LoginComponent } from './components/login/login.component';
     ReactiveFormsModule,
     HttpClientModule,
     MatTableModule,
-    MatCarouselModule.forRoot()
+    MatCarouselModule.forRoot(),
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
