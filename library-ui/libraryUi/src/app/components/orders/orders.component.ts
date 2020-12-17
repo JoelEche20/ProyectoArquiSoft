@@ -14,7 +14,7 @@ import { Input } from '@angular/core';
 export class OrdersComponent implements OnInit {
   ordersList: Order[] = [];
   dataSource: MatTableDataSource<Order>;
-  displayedColumns: string[] = ['id', 'price', 'phone', 'address', 'idUser', 'idBook', 'options'];
+  displayedColumns: string[] = ['id', 'price', 'phone', 'address', 'idUser', 'idBook'];
   data;
   @Input() id: number;
   constructor(private httpService: HttpService,public dialog: MatDialog) { }
@@ -24,7 +24,7 @@ export class OrdersComponent implements OnInit {
   { 'image': 'https://www.napolike.it/wp-content/uploads/2020/03/libri.jpg'}];
 
   ngOnInit(): void {
-    this.httpService.get("https://localhost:44384/api/orders").subscribe((response: Order[]) => {
+    this.httpService.get("http://localhost:51365/api/orders").subscribe((response: Order[]) => {
       this.ordersList = response;
       this.dataSource = new MatTableDataSource<Order>(this.ordersList);
     })
@@ -32,10 +32,10 @@ export class OrdersComponent implements OnInit {
   }
 
   openDialogAdd() {
-    const dialogRef = this.dialog.open(AddOrdersComponent, { data: this.id, width: "500px" });
+    const dialogRef = this.dialog.open(AddOrdersComponent, { width: "500px" });
     dialogRef.afterClosed().subscribe(res => {
-      if (res) {
-        this.data.push(res["data"]);
+      if (res!=undefined) {
+        this.data.push(res);
         this.dataSource = new MatTableDataSource(this.data);
       }
     })

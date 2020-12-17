@@ -61,7 +61,6 @@ export class AddOrdersComponent implements OnInit {
           duration: 2000
         });
       }, err => {
-        console.log(err);
         this._snackBar.open("Error Al Crear", "Aceptar", {
           duration: 2000,
         });
@@ -72,7 +71,7 @@ export class AddOrdersComponent implements OnInit {
           duration: 2000,
         });
     }
-
+    window.location.reload();
   }
   public uploadFinished = (event) => {
     this.response = event;

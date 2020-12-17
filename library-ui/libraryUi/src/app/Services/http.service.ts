@@ -16,7 +16,7 @@ const httpOptions = {
 
 export class HttpService {
 
-  ordersUrl:string = 'http://localhost:4200/orders';
+  ordersUrl:string = 'http://localhost:51365/api/orders';
   constructor(private http: HttpClient) { }
 
   get(url: string) {
@@ -25,7 +25,14 @@ export class HttpService {
 
   addOrder(order:Order):Observable<Order> {
     const url =this.ordersUrl;
-    let body = JSON.stringify(order);
+    let body = JSON.stringify({ 
+      "Price":Number(order.price),
+      "Phone":order.phone,
+      "Address":order.address,
+      "idUser":order.idUser,
+      "idBook":order.idBook
+    });
+    console.log(body);
     return this.http.post<Order>(url, body, httpOptions);
   }
 }
