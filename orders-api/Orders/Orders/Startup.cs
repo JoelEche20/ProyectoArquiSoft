@@ -49,13 +49,7 @@ namespace Orders
             });
             services.AddAutoMapper(typeof(Startup));
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy",
-                    builder => builder.AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyHeader());
-            });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,9 +60,9 @@ namespace Orders
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
@@ -76,7 +70,7 @@ namespace Orders
             {
                 endpoints.MapControllers();
             });
-            app.UseCors("CorsPolicy");
+            app.UseHttpsRedirection();
         }
     }
 }
