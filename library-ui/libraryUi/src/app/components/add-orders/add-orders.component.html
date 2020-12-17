@@ -1,0 +1,59 @@
+<div class="justify-center edit-Form">
+
+    <div mat-icon-button class="close-button" (click)="onCancelar()">
+        <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </div>
+
+    <h2 mat-dialog-title>Añadir Orden</h2>
+
+    <div mat-dialog-content>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Price" formControlName="price" required>
+                <mat-error>
+                    Por favor ingrese el precio
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Phone"  formControlName="phone" required>
+                <mat-error>
+                    Por favor ingrese el telefono
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Address"  formControlName="address" required>
+                <mat-error>
+                    Por favor ingrese la direccion
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="IdUser"  formControlName="idUser" required>
+                <mat-error>
+                    Por favor ingrese el id del usuario
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="IdBook"  formControlName="idBook" required>
+                <mat-error>
+                    Por favor ingrese el id del libro
+                </mat-error>
+            </mat-form-field>
+        </form>
+         
+    </div>
+
+    <mat-dialog-actions align="end">
+        <button mat-raised-button color="warn" (click)="onCancelar()">
+            <span class="material-icons">
+                clear
+            </span>
+            Cancelar</button>
+        <button mat-raised-button type="submit" (click)="onSubmit()">
+            <span class="material-icons">
+                done
+            </span>
+            Aceptar</button>
+    </mat-dialog-actions>
+</div>

@@ -21,13 +21,20 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { OrdersComponent } from './components/orders/orders.component';
+import { AddOrdersComponent } from './components/add-orders/add-orders.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    OrdersComponent,
+    AddOrdersComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +55,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
     MatTableModule,
-    MatCarouselModule.forRoot()
+    MatCarouselModule.forRoot(),
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
