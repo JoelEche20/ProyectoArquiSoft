@@ -26,6 +26,7 @@ import { LoginComponent } from './components/login/login.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { AddOrdersComponent } from './components/add-orders/add-orders.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatSnackBarModule}from '@angular/material/snack-bar';
 
 
 
@@ -61,6 +62,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatTableModule,
     MatCarouselModule.forRoot(),
     MatDialogModule,
+    MatSnackBarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

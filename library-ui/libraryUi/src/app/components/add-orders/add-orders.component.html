@@ -11,7 +11,7 @@
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
             <mat-form-field class="edit-full-width">
-                <input matInput placeholder="Price" formControlName="price" required>
+                <input matInput placeholder="Price" type="number" formControlName="price" required>
                 <mat-error>
                     Por favor ingrese el precio
                 </mat-error>
